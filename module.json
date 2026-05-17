@@ -1,0 +1,37 @@
+{
+  "id": "testing-module",
+  "title": "Testing Module",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "description": "<p>Automated testing module.</p>",
+  "esmodules": [
+    "dist/module.js"
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": [
+      {
+        "id": "quench",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "shared-compendiums",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  }
+}

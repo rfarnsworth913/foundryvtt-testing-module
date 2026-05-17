@@ -1,0 +1,15 @@
+# Project Configuration
+# Ignore configuration files and folders that are directly related to specific editors
+*.sublime-project
+*.sublime-workspace
+.idea
+
+# External Dependencies
+# Ignore external dependencies that should be imported by the developer when the project is built on their
+# machine, or when it is deployed to a repository
+node_modules/
+
+# Build Assets
+# Assets that are built by any build process within the application
+dist/
+build/
