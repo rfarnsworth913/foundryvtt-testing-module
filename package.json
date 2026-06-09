@@ -4,11 +4,11 @@
   "description": "Automated testing for FoundryVTT customizations.",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "dist/module.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "watch": "tsc -w -p tsconfig.json",
+    "build": "webpack --config webpack.config.ts",
+    "watch": "webpack --watch --config webpack.config.ts",
     "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\""
   },
   "devDependencies": {
@@ -16,10 +16,16 @@
     "@ethaks/fvtt-quench": "0.10.0",
     "@stylistic/eslint-plugin": "5.10.0",
     "@stylistic/eslint-plugin-ts": "4.4.1",
+    "@types/node": "^25.9.2",
+    "ajv": "^8.20.0",
     "eslint": "10.3.0",
     "eslint-plugin-jsdoc": "62.9.0",
     "fvtt-types": "13.346.0-beta.20250812191140",
-    "typescript": "6.0.3",
-    "typescript-eslint": "8.59.3"
+    "ts-loader": "^9.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "8.59.3",
+    "webpack": "^5.107.2",
+    "webpack-cli": "^7.0.3"
   }
 }

@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "types": ["node"],
+        "rootDir": ".",
+        "module": "CommonJS",
+        "moduleResolution": "node"
+    },
+    "include": [
+        "webpack.config.ts"
+    ]
+}
