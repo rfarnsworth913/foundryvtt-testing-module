@@ -27,5 +27,9 @@
     "typescript-eslint": "8.59.3",
     "webpack": "^5.107.2",
     "webpack-cli": "^7.0.3"
+  },
+  "dependencies": {
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10"
   }
 }
